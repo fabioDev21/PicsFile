@@ -1,0 +1,11 @@
+.vantagens{
+    grid-area: vantagens;
+}
+
+.vantagens > .title{
+    font-size: 3em;
+    font-weight: 900;
+    color: var(--light-red);
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,32 @@
+.about{
+    grid-area: about;
+    position: relative;
+    display: flex;
+    width: 50%;
+    flex: 1;
+    justify-content: end;
+    align-items: center;
+    margin: auto;
+    scroll-snap-align: center;
+}
+.about__desc{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    gap: 1.3em;
+}
+.about__desc > .subtitle{
+    font-size: 3em;
+    color: var(--light-red);
+    font-weight: 900;
+}
+.about__desc > .text{
+    font-size: 1.5em;
+}
+@media screen and ( max-width: 2000px) {
+    .about__desc{
+        width: 100%;
+    }
+}

@@ -1,0 +1,46 @@
+.call2action{
+    grid-area: call2action;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3em;
+}
+.call2action > .desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6em;
+    font-size: 1.3em;
+}
+.call2action > .desc > .subtitle{
+    font-size: 1.6em;
+    color: var(--light-red);
+    font-weight: 900;
+}
+.call2action > .buttons{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    gap: 3em;
+}
+.buttons > a > button{
+    font-size: 1.1em;
+    font-weight: 900;
+    padding: 1.2em 1.5em;
+    border-radius: 45px;
+    background-color: transparent;
+    color: var(--light-red);
+    border: 5px solid var(--light-beige);
+    transition: .5s;
+    cursor: pointer;
+}
+.buttons > a > button:hover{
+    background-color: var(--light-red);
+    border-color: var(--light-red);
+    color: var(--dont-black);
+    scale: 1.02;
+}
+.buttons > a{
+    transition: .5s;
+}

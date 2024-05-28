@@ -1,0 +1,32 @@
+.avaliacoes{
+    grid-area: avaliacoes;
+}
+.avaliacoes > .title{
+    font-size: 3em;
+    font-weight: 900;
+    color: var(--light-red);
+}
+.cards-item{
+    height: 350px;
+    flex-basis: 320px;
+    gap: 0em;
+}
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50%;
+}
+.perfil > img{
+    width: 8em;
+    border-radius: 8em;
+}
+.perfil > .text{
+    font-weight: 700;
+    font-size: 1.3em;
+}
+.nota > .text{
+    font-weight: 500;
+    text-align: justify;
+}

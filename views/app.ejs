@@ -4,26 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/styles/base.css" type="text/css">
+    <link rel="stylesheet" href="public/styles/form/forms.css" type="text/css">
     <script src="https://kit.fontawesome.com/b5d27f2592.js" crossorigin="anonymous"></script>
     <title>Início</title>
 </head>
 <body>
     <div id="header">
-        <a href="/inicio"><i class="fa-solid fa-image"></i></a>
+        <a href="/"><i class="fa-solid fa-image"></i></a>
         <div class="header__nav">
-            <a href="/images"><button>PicsFile</button></a>
+            <a href="/"><button>Home</button></a>
         </div>
     </div>
-    <div class="container-ferramenta">
+    <div id="container-ferramenta">
         <div class="title">
             Adicione sua imagem!
-            <div class="subtitle">
-
-            </div>
+        </div>
+        <div class="adcImage">
+            <form action="/images" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="name">Insira um título criativo:</label>
+                    <input type="text" name="name">
+                </div>
+                <div>
+                    <label for="local">Insira o local:</label>
+                    <input type="text" name="local">
+                </div>
+                <div>
+                    <label for="file">Insira a imagem:</label>
+                    <input type="file" name="file" >
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
         </div>
     </div>
     <div id="footer">
-        <a href="/termos-de-uso">Termos de uso</a>
-        <a href="/politicas-de-privacidade">Políticas de privacidade</a>
+        <a href="/">Termos de uso</a>
+        <a href="/">Políticas de privacidade</a>
     </div>
 </body>

@@ -1,5 +1,5 @@
 {
-  "name": "subaudios",
+  "name": "picsfile",
   "version": "1.0.0",
   "description": "galeria de imagens em nuvem",
   "main": "index.js",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fabioDev21/ProjectSubAudios.git"
+    "url": "git+https://github.com/fabioDev21/Picsfile.git"
   },
   "author": "the_seven_ads",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fabioDev21/ProjectSubAudios/issues"
+    "url": "https://github.com/fabioDev21/PicsFile/issues"
   },
   "homepage": "https://github.com/fabioDev21/ProjectSubAudios#readme",
   "dependencies": {

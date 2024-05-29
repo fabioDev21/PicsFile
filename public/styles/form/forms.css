@@ -1,0 +1,31 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "container-ferramenta"
+    "footer";
+    grid-template-rows: 10vh 80vh 10vh;
+}
+
+#container-ferramenta{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-block: 1.3em;
+    margin-inline: auto;
+    gap: 1.2em;
+}
+
+#container-ferramenta > .title{
+    font-size: 3em;
+    font-weight: 900;
+    color: var(--light-red);
+}
+#container-ferramenta > .adcImage > forms{
+    display: flex;
+    flex-direction: column;
+}
+.adcImage > forms > div > input{
+    padding: 5em;
+}

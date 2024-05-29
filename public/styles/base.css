@@ -14,6 +14,9 @@ html{
     box-sizing: border-box;
     font-family: 'Lato', 'sans-serif';
 }
+img{
+    filter: grayscale(90);
+}
 body{
     background-color: var(--dont-black);
     color: var(--light-beige);

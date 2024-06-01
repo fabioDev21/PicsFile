@@ -1,31 +1,61 @@
-body{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "container-ferramenta"
-    "footer";
-    grid-template-rows: 10vh 80vh 10vh;
-}
-
-#container-ferramenta{
+.adcImage{
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    margin-block: 1.3em;
-    margin-inline: auto;
-    gap: 1.2em;
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    padding: 1em;
+    background-color: var(--dont-black);
+    border: 5px solid var(--light-beige);
+    border-radius: 30px;
 }
-
-#container-ferramenta > .title{
-    font-size: 3em;
+.adcImage > .title{
+    text-align: center;
+    margin: 1em;
+}
+.labelsInputs{
+    margin: .5em;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.labelsInputs > input{
+    padding: 0.5em;
+    border-radius: 15px;
+    border: none;
+}
+.labelsInputs > input[type="text"]:focus{
+    outline: none;
+    border: 2px solid var(--light-red);
+}
+.labelsInputs > input[type="file"]{
+    display: none;
+}
+#sobeArquivo{
+    padding: .5em;
+    background-color: #ffffffcd;
+    color: var(--dont-black);
+    border: 5px solid var(--light-beige);
+    border-radius: 15px;
+    text-align: center;
+    transition: .4s;
+    cursor: pointer;
+}
+#sobeArquivo:hover{
+    background-color: var(--dont-black);
+    color: #ffffffcd;
+}
+.submitBtn{
+    padding: .9em;
+    margin: 1em;
+    border-radius: 15px;
+    border: 5px solid var(--light-beige);
+    background-color: var(--light-red);
+    font-size: 1.1em;
     font-weight: 900;
-    color: var(--light-red);
+    color: var(--light-beige);
+    transition: .4s;
+    cursor: pointer;
 }
-#container-ferramenta > .adcImage > forms{
-    display: flex;
-    flex-direction: column;
-}
-.adcImage > forms > div > input{
-    padding: 5em;
+.submitBtn:active, .submitBtn:hover{
+    scale: 1.1;
 }

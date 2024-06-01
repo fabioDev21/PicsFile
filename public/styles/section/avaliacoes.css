@@ -20,7 +20,9 @@
 }
 .perfil > img{
     width: 8em;
-    border-radius: 8em;
+    height: 8em;
+    object-fit: cover;
+    border-radius: 5px;
 }
 .perfil > .text{
     font-weight: 700;

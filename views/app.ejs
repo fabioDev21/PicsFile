@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/styles/base.css" type="text/css">
+    <link rel="stylesheet" href="public/styles/form/app.css" type="text/css">
     <link rel="stylesheet" href="public/styles/form/forms.css" type="text/css">
+    <link rel="stylesheet" href="public/styles/form/images.css" type="text/css">
+    <script src="../public/scripts/loadImages.js" defer></script>
     <script src="https://kit.fontawesome.com/b5d27f2592.js" crossorigin="anonymous"></script>
     <title>Início</title>
 </head>
@@ -16,25 +19,30 @@
         </div>
     </div>
     <div id="container-ferramenta">
-        <div class="title">
-            Adicione sua imagem!
-        </div>
-        <div class="adcImage">
-            <form action="/images" method="post" enctype="multipart/form-data">
-                <div>
-                    <label for="name">Insira um título criativo:</label>
-                    <input type="text" name="name">
-                </div>
-                <div>
-                    <label for="local">Insira o local:</label>
-                    <input type="text" name="local">
-                </div>
-                <div>
-                    <label for="file">Insira a imagem:</label>
-                    <input type="file" name="file" >
-                </div>
-                <input type="submit" value="Enviar">
-            </form>
+        <form class="adcImage" action="/images" method="post" enctype="multipart/form-data">
+            <div class="title">
+                Adicione sua imagem:
+            </div>
+            <div class="labelsInputs" >
+                <label id="sobeArquivo" for="arquivo">Inserir imagem</label>
+                <input type="file" name="file" id="arquivo"
+                accept="image/png" required>
+            </div>
+            <div class="labelsInputs">
+                <label for="nome">Insira o título</label>
+                <input type="text" name="name"
+                id="nome" required>
+            </div>
+            <div class="labelsInputs">
+                <label for="local">Insira o local</label>
+                <input type="text" name="local" id="local" required>
+            </div>
+            <input type="submit" value="Enviar" class="submitBtn" >
+        </form>
+        <div class="galeriaImagens">
+            <p class="title">Imagens adicionadas:</p>
+            <div class="imagens">
+            </div>
         </div>
     </div>
     <div id="footer">

@@ -23,11 +23,11 @@ app.get("/", (req, res) => (
 
 app.get("/images", (req, res) => {
     res.render("app")
-    
 })
 
 app.use(ImageRouter)
 
 app.listen(port, () => {
     console.log(`Servidor on na porta ${port}`)
+    console.log(`Acesse: http://localhost:${port}`)
 })

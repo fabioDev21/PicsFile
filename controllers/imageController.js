@@ -1,4 +1,6 @@
-const ImageSchema =  require("../models/image.js")
+const ImageSchema =  require("../models/image")
+const fs = require("fs")
+
 
 exports.create = async (req, res) => {
     try {
@@ -22,8 +24,22 @@ exports.create = async (req, res) => {
 exports.findAll = async (req, res) => {
     try {
         const pictures = await ImageSchema.find()
-        res.json(pictures) 
+        res.json(pictures)
     } catch (error) {
         console.log("Erro ao carregar imagens")
+    }
+}
+
+exports.deleteImage = async (req, res) => {
+    try{   
+        const imagem = await ImageSchema.findById(req.params.id)
+        await ImageSchema.findByIdAndDelete(req.params.id);
+        fs.unlinkSync(imagem.src)
+
+        res.redirect("/images")
+    } catch(error){
+        console.log(req.params.id)
+        console.log("Não foi possível deletar a imagem")
+        console.error(error)
     }
 }

@@ -1,0 +1,22 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "container-ferramenta"
+    "container-ferramenta"
+    "footer";
+    grid-template-rows: 10vh 100% 10vh;
+}
+
+#container-ferramenta{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-block: 1.3em;
+    gap: 1.2em;
+}
+.title{
+    font-size: 1.3em;
+    color: var(--light-red);
+    font-weight: 700;
+}
